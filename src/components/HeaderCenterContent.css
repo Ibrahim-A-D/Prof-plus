@@ -1,0 +1,170 @@
+.center__content {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(13px + 2vmin);
+    color: white;
+    background-size: cover;
+    width: 100%;
+    object-fit: contain;
+    /* background-blend-mode:overlay; */
+  }
+  .center__content h2{
+    font-size: calc(30px + 0.2vmin);
+  }
+  .center__content::before{
+    content: "";
+    /* background-image: url('/images/banimg.jpg'); */
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+    z-index: -1;
+  }
+  .center__content p{
+      text-align: center;
+  }
+  .center__content .search__bar{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color:black;
+      padding: 1% 4%;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 5px;
+  }
+  .center__content .search__bar .input__bar i{
+    color: #3a3939;
+    font-size: 20px;
+    margin-right: 1%;
+}
+  .center__content .search__bar .input__bar input{
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin:1%;
+  }
+  .center__content .search__bar .input__bar{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "poppins";
+      
+  }
+  .center__content .search__bar .input__bar input{
+    outline:none;
+  }
+  .center__content button{
+      border:none;
+      padding: 2%;
+      background:#ffa200;
+      color: #fff;
+      border-radius: 5px;
+      font-family: "Montserrat";    
+      transition: all 0.3s ease-in;  
+  }
+  .center__content button:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+  }
+  .center__content button:active{   
+    background:#dd9a27;
+  }
+  .border-right{
+      border-right:1px solid #838383;
+      margin-right: 2%;
+      height: 35px;
+  }
+  .contact{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background-color: #ffff;
+      opacity: 0.5;
+      padding: 1.3% 8%;
+      border-radius: 50px;
+      margin:2% 0;
+      font-size: 30px;
+  }
+ 
+  .contact:after{
+        content: "+224 621 11 11 11";
+        color: black;
+        font-family: "Montserrat semiBold";
+        opacity: 1;
+        text-align: center;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+  }
+  .contact i{
+      color:#000000;
+      margin-right: 10px;
+      font-size: 35px;
+  }
+
+  /*RESPONSIVE DESIGN*/
+  @media screen and (max-width:700px){
+   .center__content .search__bar{
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     width: 80%;
+     padding-left: 0;
+     padding-right: 0;
+     background-color: transparent;
+     color: #ffff;
+   }
+   .center__content .search__bar .input__bar{
+     width: 100%;
+     justify-content: flex-start;
+     margin-left: 5%;
+     border-bottom: 1px solid rgb(248, 215, 153);
+     padding:2% 0;
+     margin-bottom: 1%;
+   }
+   .center__content .search__bar .input__bar input{
+    color:#ffffff;
+   }
+   .center__content .search__bar .input__bar i{
+     color: rgb(250, 188, 72);
+   }
+   .search__bar button {
+     margin:2% 0;
+     border-radius: 20px;
+     padding:3%;
+     font-weight: 500px;
+   }
+    .border-right{
+     border-right: none;
+   }
+   .contact i{
+     font-size: 30px;
+   }
+   
+}
+
+/*Tablette*/
+@media screen and (min-width:600px) and (max-width:900px) {
+  .center__content .search__bar .input__bar input{
+    font-size: 13.5px;
+   }
+   .center__content .search__bar .input__bar i{
+    font-size: 15px;
+    margin-left: 10%;
+   }
+   .search__bar button{
+     margin-right:5px;
+   }
+  
+}

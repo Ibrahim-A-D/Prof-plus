@@ -1,0 +1,35 @@
+.detail__left{
+   width: 20%;
+   text-align: left;
+}
+.top{
+    background-color: #ffff;
+    padding:5%;
+    border: 10px;
+    margin-bottom: 3%;
+}
+.top hr{
+    color: rgb(192, 192, 192);
+}
+.bottom hr{
+    color: rgb(192, 192, 192);
+}
+.bottom{
+    background-color: #ffff;
+    padding:5%;
+    border: 10px;
+}
+.detail__left h3{
+    margin: 0;
+}
+.detail__left p{
+    margin: 0;
+}
+ .libelle{
+    display: flex;
+    align-items: center;
+    padding:10px;
+}
+ .libelle i{
+    margin-right: 10px;
+}
