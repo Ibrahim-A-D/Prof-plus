@@ -54,7 +54,7 @@ header p{
 
 .link {
     text-decoration: none;
-    color:#ffd900;
+    color:#202020;
     font-size: calc(10px + 1vmin);
     font-family: "Montserrat";
     transition: all 0.2s ease-in;   
@@ -63,7 +63,7 @@ header p{
     color:#ffa500;
 }
 .head__link_color{
-    color:#fcb142;
+    color:#202020;
 }
 .toogle__icone{
     display: none;

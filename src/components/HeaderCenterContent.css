@@ -10,6 +10,8 @@
     background-size: cover;
     width: 100%;
     object-fit: contain;
+    margin: 0;
+    padding: 0;
     /* background-blend-mode:overlay; */
   }
   .center__content h2{
@@ -40,26 +42,35 @@
       box-sizing: border-box;
       background-color: #fff;
       border-radius: 5px;
+      width: 60%;
+      margin: 0;
+      padding: 12px;
   }
-  .center__content .search__bar .input__bar i{
+  .center__content .search__bar .inputBar i{
     color: #3a3939;
     font-size: 20px;
     margin-right: 1%;
 }
-  .center__content .search__bar .input__bar input{
+  .center__content .search__bar .inputBar input{
     border: none;
     background: none;
     font-size: 18px;
     margin:1%;
+    width: 60%;
   }
-  .center__content .search__bar .input__bar{
+  .center__content .search__bar .inputBar{
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: "poppins";
-      
+      font-family: "poppins";      
   }
-  .center__content .search__bar .input__bar input{
+  .center__content .search__bar .inputBar::after{
+    content: "";
+    border-right:1px solid #838383;
+      margin-right: 2%;
+      height: 35px;
+  }
+  .center__content .search__bar .inputBar input{
     outline:none;
   }
   .center__content button{
@@ -70,6 +81,10 @@
       border-radius: 5px;
       font-family: "Montserrat";    
       transition: all 0.3s ease-in;  
+      margin: 0;
+      padding: 1%;
+      font-size: 1rem;
+      margin-right: 4.5%;
   }
   .center__content button:hover{
     cursor: pointer;
@@ -78,11 +93,11 @@
   .center__content button:active{   
     background:#dd9a27;
   }
-  .border-right{
+  /* .border-right{
       border-right:1px solid #838383;
       margin-right: 2%;
       height: 35px;
-  }
+  } */
   .contact{
       display: flex;
       justify-content: center;
@@ -114,7 +129,7 @@
   }
 
   /*RESPONSIVE DESIGN*/
-  @media screen and (max-width:700px){
+  @media screen and (min-width:280px) and (max-width:950px){
    .center__content .search__bar{
      display: flex;
      flex-direction: column;
@@ -125,7 +140,7 @@
      background-color: transparent;
      color: #ffff;
    }
-   .center__content .search__bar .input__bar{
+   .center__content .search__bar .inputBar{
      width: 100%;
      justify-content: flex-start;
      margin-left: 5%;
@@ -133,10 +148,10 @@
      padding:2% 0;
      margin-bottom: 1%;
    }
-   .center__content .search__bar .input__bar input{
+   .center__content .search__bar .inputBar input{
     color:#ffffff;
    }
-   .center__content .search__bar .input__bar i{
+   .center__content .search__bar .inputBar i{
      color: rgb(250, 188, 72);
    }
    .search__bar button {
@@ -145,9 +160,12 @@
      padding:3%;
      font-weight: 500px;
    }
-    .border-right{
+    /* .border-right{
      border-right: none;
-   }
+   } */
+   .center__content .search__bar .inputBar::after{
+     height: 0;
+  }
    .contact i{
      font-size: 30px;
    }
@@ -155,16 +173,16 @@
 }
 
 /*Tablette*/
-@media screen and (min-width:600px) and (max-width:900px) {
+@media screen and (min-width:768px) and (max-width:822px) {
   .center__content .search__bar .input__bar input{
-    font-size: 13.5px;
+    font-size: 13px;
    }
    .center__content .search__bar .input__bar i{
-    font-size: 15px;
-    margin-left: 10%;
+    font-size: 13px;
+    margin-left: 7%;
    }
    .search__bar button{
-     margin-right:5px;
+     margin-right:4px;
    }
   
 }
